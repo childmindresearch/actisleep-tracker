@@ -17,7 +17,7 @@ library(GGIR)
             datadir="/Users/nathalia.esper/Documents/Ongoing_Projects/Actigraphy/actisleep_paper/data/raw/sub001.gt3x",
             outputdir="/Users/nathalia.esper/Documents/Ongoing_Projects/Actigraphy/actisleep_paper/data/outputs",
             studyname="sub001",
-            f0=0, f1=0,    
+            f0=0, f1=0,
             overwrite = TRUE,
             idloc=6,
             print.filename=TRUE,
