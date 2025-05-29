@@ -56,7 +56,7 @@ Run ActiSleep Tracker through Docker by typing:
    --volume /Users/nathalia.esper/Documents/actisleep-tracker/paper/data/ggir_outputs:/data \
    cmidair/actigraphy:main
 ```
-If you are using your own dataset, replace `/Users/nathalia.esper/Documents/actisleep-tracker/paper/data/ggir_outputs` with the path to the GGIR's outputs. 
+If you are using your own dataset, replace `/Users/nathalia.esper/Documents/actisleep-tracker/paper/data/ggir_outputs` with the path to the GGIR's outputs.
 
 The application will the available at http://localhost:8051.
 
@@ -78,11 +78,11 @@ Once the file is loaded, you will see the following screen:
 
 The top slider is used to select the day to visualize. Next, you have three main questions to answer about that night:
 1. Are there multiple sleep periods in these data? - Select this toggle button if you identify more than one sleep window on that day (i.e., multiple sleep windows at night or nap times during the day).
-2. Do you need to review this night? - Select this toggle button if that day will need further review. 
+2. Do you need to review this night? - Select this toggle button if that day will need further review.
 3. Are >2 hours of data missing between 8PM to 8AM? - Select this toggle button if there is insufficient data for sleep analysis. For the protocol we designed, we were considering sleep periods between 8PM to 8AM, but you can use this toggle and adapt to your own needs.
 
 The graph represents the angle of sensor's z-axis (in blue) and arm movement (in black). The slider below the graph is used to adjust the main sleep window. To change the window, just slide the slider to the desired onset and/or offset sleep times. In cases where your data has more than one sleep window (multiple sleep windows at night or nap times during the day), you can use the `Add Slider` button to create a new sleep window. Note that the main sleep episode should always use the slider below the graphs. The code will automatically save all changes you made and will create three files:
-  
+
   1. `ggir_outputs/output_sub001/logs/data_cleaning_sub001.csv`: a [data cleaning file](https://wadpac.github.io/GGIR/articles/chapter10_SleepAnalysis.html#data-cleaning-file) that contains nights that should be omitted from sleep analysis;
   2. `ggir_outputs/output_sub001/logs/multiple_sleep_sub001.csv`: file that documents cases with more than one sleep window per day, facilitating analyses of naps and nocturnal awakenings.
   3. `ggir_outputs/output_sub001/logs/sleeplog_sub001.csv`: initial sleep onset and offset [predictions from GGIR](https://wadpac.github.io/GGIR/articles/chapter10_SleepAnalysis.html).
