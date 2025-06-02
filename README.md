@@ -63,7 +63,7 @@ The application will the available at http://localhost:8051.
 Select the output you would like to visualize; then, click on `Load Files`:
 
 <figure>
-  <img src="paper/man/figures/README-initialscreen.png" alt="Alt text" width="100%"/>
+  <img src="paper/man/README-initialscreen.png" alt="Alt text" width="100%"/>
   <figcaption>Figure 1: ActiSleep Tracker initial screen. To start, select the data you would like to load and click `Load Files`.</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Note: the file may take some time to load for the first time.
 Once the file is loaded, you will see the following screen:
 
 <figure>
-  <img src="paper/man/figures/README-loaddata.png" alt="Alt text" width="100%"/>
+  <img src="paper/man/README-loaddata.png" alt="Alt text" width="100%"/>
   <figcaption>Figure 2: Main screen. From here, you can change the sleep annotations from your data and add multiple slee windows.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ The graph represents the angle of sensor's z-axis (in blue) and arm movement (in
   3. `ggir_outputs/output_sub001/logs/sleeplog_sub001.csv`: initial sleep onset and offset [predictions from GGIR](https://wadpac.github.io/GGIR/articles/chapter10_SleepAnalysis.html).
 
 <figure>
-  <img src="paper/man/figures/README-usingmultiplesleepwindows.png" alt="Alt text" width="100%"/>
+  <img src="paper/man/README-usingmultiplesleepwindows.png" alt="Alt text" width="100%"/>
   <figcaption>Figure 3: Day with a nap time during the day. You can add a secondary sleep slider and adjust it as needed.</figcaption>
 </figure>
 
