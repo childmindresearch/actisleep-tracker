@@ -85,7 +85,7 @@ The application includes three toggle buttons designed to facilitate data review
 
 ![ActiSleep Tracker (A) main window and (B) the option to add a secondary sleep window.\label{fig:main_screen}](assets/figure2.png)
 
-Figure \autoref{fig:changing_annotation} demonstrates the functionality of the ActiSleep Tracker tool. Panel (A) displays the initial sleep prediction from GGIR (shaded in red), indicating that the participant slept from 5:00 AM to 11:59 AM. Panel (B) shows the adjusted sleep window after applying the ActiSleep Tracker tool, which indicates the correct wake-up time at 2:27 PM. A video demonstrating [how to use ActiSleep Tracker](https://youtu.be/s9r8V9NCC2M) is also available online.
+\autoref{fig:changing_annotation} demonstrates the functionality of the ActiSleep Tracker tool. Panel (A) displays the initial sleep prediction from GGIR (shaded in red), indicating that the participant slept from 5:00 AM to 11:59 AM. Panel (B) shows the adjusted sleep window after applying the ActiSleep Tracker tool, which indicates the correct wake-up time at 2:27 PM. A video demonstrating [how to use ActiSleep Tracker](https://youtu.be/s9r8V9NCC2M) is also available online.
 
 ![Example of changing the annotation created by an automated algorithm to detect sleep events.\label{fig:changing_annotation}](assets/figure3.png)
 
