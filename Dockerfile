@@ -1,4 +1,4 @@
-FROM python:3.11-buster
+FROM ghcr.io/astral-sh/uv:python3.11-bookworm
 
 EXPOSE 8051
 
@@ -6,8 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install poetry && \
-    poetry config virtualenvs.create false && \
-    poetry install --only main
+RUN uv sync --no-dev
 
-CMD ["poetry", "run", "actigraphy", "/data"]
+CMD ["uv", "run", "--no-dev", "actigraphy", "/data"]

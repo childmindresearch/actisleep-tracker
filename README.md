@@ -107,9 +107,11 @@ The Actigraphy app is developed to annotate sleep data, and for this project, we
 
 That being said, the callback architecture has grown complex, especially in the graph component where chains of callbacks can cause the app to slow down.
 
-### Running the App through Poetry
+### Running the App through uv
 
-1. Ensure you have [Poetry](https://python-poetry.org/docs/) installed.
+Installation via `uv` is intended for developers; end-users should use the Docker installation described earlier.
+
+1. Ensure you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed.
 2. Clone the repository:
    ```bash
    git clone https://github.com/childmindresearch/app-actigraphy.git
@@ -117,9 +119,9 @@ That being said, the callback architecture has grown complex, especially in the 
    ```
 3. Install dependencies:
    ```bash
-   poetry install
+   uv sync
    ```
 4. Run the app:
    ```bash
-   poetry run actigraphy {DATA_DIR}
+   uv run actigraphy {DATA_DIR}
    ```
