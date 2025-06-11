@@ -55,6 +55,7 @@ def create_app() -> dash.Dash:
     return app
 
 
-if __name__ == "__main__":
+def run_app() -> None:
+    """Entrypoint for the application."""
     app = create_app()
-    app.run_server(debug=True)
+    app.run_server(debug=False)

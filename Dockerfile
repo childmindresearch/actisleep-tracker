@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN uv sync
+RUN uv sync --no-dev
 
-CMD ["uv", "run", "actigraphy", "/data"]
+CMD ["uv", "run", "--no-dev", "actigraphy", "/data"]
