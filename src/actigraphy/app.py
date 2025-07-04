@@ -36,17 +36,11 @@ def create_app() -> dash.Dash:
     callback_manager.global_manager.attach_to_app(app)
 
     logger.info("Creating app layout")
-    header = html.Img(
-        src="/assets/CMI_Logo_title.png",
-        style={"height": "60%", "width": "60%"},
-    )
-
     subject_directories = cli.get_subject_folders(args)
     app.layout = html.Div(
         (
             dcc.Store(id="file_manager", storage_type="session"),
             dcc.Store(id="check-done", storage_type="session"),
-            header,
             file_selection.file_selection(subject_directories),
             html.Pre(id="annotations-data"),
             app_license.app_license(),
@@ -58,4 +52,4 @@ def create_app() -> dash.Dash:
 def run_app() -> None:
     """Entrypoint for the application."""
     app = create_app()
-    app.run_server(debug=False)
+    app.run_server(debug=False, port=8051)

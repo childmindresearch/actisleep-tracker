@@ -137,7 +137,7 @@ def initialize_components() -> None:
     callbacks are registered.
     """
     # pylint: disable=import-outside-toplevel disable=unused-import
-    from actigraphy.components import (
+    from actigraphy.components import (  # noqa: PLC0415
         app_license,  # noqa: F401
         day_slider,  # noqa: F401
         file_selection,  # noqa: F401
