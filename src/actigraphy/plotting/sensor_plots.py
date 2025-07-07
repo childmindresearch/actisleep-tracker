@@ -289,7 +289,7 @@ def _build_figure(  # noqa: PLR0913
             text=x_hover_names,
             mode="lines",
             name="Arm movement",
-            line_color="black",
+            line_color="gray",
             yaxis="y2",
         ),
     )
