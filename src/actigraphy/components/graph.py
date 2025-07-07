@@ -511,11 +511,10 @@ def _build_figure(  # noqa: PLR0913
 ) -> graph_objects.Figure:
     """Build the graph figure."""
     logger.debug("Building figure.")
-    rescale_arm_movement = [value * 50 - 210 for value in arm_movement]
     figure, max_measurements = sensor_plots.build_sensor_plot(
         timestamps,
         sensor_angle,
-        rescale_arm_movement,
+        arm_movement,
         title_day,
     )
 
