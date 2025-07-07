@@ -278,6 +278,7 @@ def _build_figure(  # noqa: PLR0913
             mode="lines",
             name="Angle of sensor's z-axis",
             line_color="blue",
+            yaxis="y1",
         ),
     )
     figure.add_trace(
@@ -289,6 +290,7 @@ def _build_figure(  # noqa: PLR0913
             mode="lines",
             name="Arm movement",
             line_color="black",
+            yaxis="y2",
         ),
     )
 
@@ -308,6 +310,15 @@ def _build_figure(  # noqa: PLR0913
                 "range": [x_min, x_max],
                 "tickvals": x_tick_values,
                 "ticktext": x_tick_names,
+            },
+            "yaxis": {
+                "title": "Angle of sensor's z-axis (degrees)",
+                "side": "left",
+            },
+            "yaxis2": {
+                "title": "Arm movement (mg)",
+                "side": "right",
+                "overlaying": "y",
             },
         },
     )
