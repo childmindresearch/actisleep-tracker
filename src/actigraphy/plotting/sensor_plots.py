@@ -305,6 +305,7 @@ def _build_figure(  # noqa: PLR0913
                 "x": 1,
             },
             "xaxis": {
+                "fixedrange": True,
                 "tickmode": "array",
                 "tickangle": 0,
                 "range": [x_min, x_max],
@@ -314,11 +315,13 @@ def _build_figure(  # noqa: PLR0913
             "yaxis": {
                 "title": "Angle of sensor's z-axis (degrees)",
                 "side": "left",
+                "fixedrange": True,
             },
             "yaxis2": {
                 "title": "Arm movement (mg)",
                 "side": "right",
                 "overlaying": "y",
+                "fixedrange": True,
             },
         },
     )
