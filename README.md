@@ -53,10 +53,10 @@ Run ActiSleep Tracker through Docker by typing:
 ```bash
    docker run \
    -p 127.0.0.1:8051:8051 \
-   --volume $PWD/actisleep-tracker/paper/data/ggir_outputs:/data \
+   --volume $DATA_DIR:/data \
    cmidair/actigraphy:main
 ```
-If you are using your own dataset, replace `$PWD/actisleep-tracker/paper/data/ggir_outputs` with the path to the GGIR's outputs.
+If you are using your own dataset, replace `$DATA_DIR` with the path to the GGIR's outputs.
 
 The application will the available at http://localhost:8051.
 
@@ -124,5 +124,5 @@ Installation via `uv` is intended for developers; end-users should use the Docke
    ```
 4. Run the app:
    ```bash
-   uv run actigraphy $PWD/paper/data/ggir_outputs
+   uv run actigraphy $DATA_DIR
    ```
