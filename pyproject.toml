@@ -3,7 +3,7 @@ name = "actisleep-tracker"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = "~=3.11"
+requires-python = "~=3.11.10"
 dependencies = [
     "dash~=2.15",
     "dash-bootstrap-components>=1.7.1",
@@ -107,7 +107,7 @@ convention = "google"
 "tests/**/*.py" = [
     "S101", # Allow assets
     "ARG", # Unused arguments are common in tests (fixtures).
-    "FBT", #Allow positional booleans
+    "FBT", # Allow positional booleans
     "SLF001", # Allow private member access.
     "INP001", # No need for namespace packages in tests.
 ]

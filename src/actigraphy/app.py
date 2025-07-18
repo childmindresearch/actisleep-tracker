@@ -46,10 +46,15 @@ def create_app() -> dash.Dash:
             app_license.app_license(),
         ),
     )
+
+    @app.server.route("/health")
+    def health() -> str:
+        return "{status: ok}"
+
     return app
 
 
 def run_app() -> None:
     """Entrypoint for the application."""
     app = create_app()
-    app.run_server(debug=False, port=8051)
+    app.run(debug=False, host="0.0.0.0", port=8051)  # noqa: S104

@@ -53,7 +53,7 @@ Run ActiSleep Tracker through Docker by typing:
 ```bash
    DATA_DIR="INSERT_PATH_TO_YOUR_DATA_DIRECTORY"
    docker run \
-   -p 127.0.0.1:8051:8051 \
+   -p 8051:8051 \
    --volume $DATA_DIR:/data \
    cmidair/actigraphy:main
 ```
