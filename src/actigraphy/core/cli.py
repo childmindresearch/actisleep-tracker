@@ -50,7 +50,9 @@ def get_subject_folders(args: argparse.Namespace) -> list[str]:
     Returns:
         list[str]: A list of subject folders sorted by name.
     """
-    input_datapath = args.input_folder
+    input_datapath = pathlib.Path(args.input_folder)
+    if not input_datapath.is_absolute():
+        input_datapath = pathlib.Path.cwd() / input_datapath
     return [
         str(directory)
         for directory in sorted(input_datapath.glob("output_*"))
