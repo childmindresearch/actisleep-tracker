@@ -31,6 +31,14 @@ Replace `/local/path/to/data` with the path to your input data directory (i.e., 
 
 All the steps below will consider that you cloned this GitHub repository inside your Documents folder.
 There is an examplar raw data under `paper/data/raw` and a processed version using GGIR 3.2-6 under `paper/data/ggir_outputs`.
+If you wish to use this data, be aware that it's stored via Git LFS, so you'll have to run the following commands to download it.
+
+```bash
+git clone https://github.com/childmindresearch/actisleep-tracker.git
+cd actisleep-tracker
+git lfs install
+git lfs pull
+```
 
 After cloning this repository or processing your actigraphy data with GGIR, you should have a folder structure similar to:
 

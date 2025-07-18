@@ -26,18 +26,14 @@ def test_parse_args(mocker: plugin.MockerFixture) -> None:
     assert args.verbosity == logging.INFO
 
 
-def test_get_subject_folders(mocker: plugin.MockerFixture) -> None:
+def test_get_subject_folders(tmp_path: pathlib.Path) -> None:
     """Test that get_subject_folders finds all output_ directories."""
-    mocked_path = mocker.MagicMock()
-    mocked_subfolder = mocker.MagicMock()
-    mocked_subfolder.is_dir.return_value = True
-    mocked_subfolder.__str__.return_value = "output_test"
-    mocked_path.glob.return_value = [mocked_subfolder]
-    args = argparse.Namespace(input_folder=mocked_path)
+    (tmp_path / "output_test").mkdir()
+    args = argparse.Namespace(input_folder=str(tmp_path))
 
     result = cli.get_subject_folders(args)
 
-    assert result == ["output_test"]
+    assert result[0] == str(tmp_path / "output_test")
 
 
 def test__add_string_quotation_string() -> None:
