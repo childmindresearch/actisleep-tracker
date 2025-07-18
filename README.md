@@ -21,9 +21,9 @@ The application may be installed either through Docker (recommended for users) o
 3. Run the Docker image with your data:
    ```bash
    docker run \
-      -p 127.0.0.1:8051:8051 \
-      --volume /local/path/to/data:/data \
-      cmidair/actigraphy:main
+       -p 127.0.0.1:8051:8051 \
+       --volume /local/path/to/data:/data \
+       cmidair/actigraphy:main
    ```
 Replace `/local/path/to/data` with the path to your input data directory (i.e., GGIR's output folder).
 

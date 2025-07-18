@@ -46,10 +46,21 @@ def create_app() -> dash.Dash:
             app_license.app_license(),
         ),
     )
+
     return app
+
+
+def attach_health_endpoint(app: dash.Dash) -> None:
+    """Attaches the health endpoint to the app."""
+
+    @app.server.route("/health")  # type: ignore[misc] # App is untyped.
+    def health() -> str:
+        """Returns only a status: 200."""
+        return ""
 
 
 def run_app() -> None:
     """Entrypoint for the application."""
     app = create_app()
-    app.run_server(debug=False, port=8051)
+    attach_health_endpoint(app)
+    app.run(debug=False, host="0.0.0.0", port=8051)  # noqa: S104
