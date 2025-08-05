@@ -83,7 +83,7 @@ Additionally, the SQLite database includes two key tables: one containing the sl
 
 The application includes three toggle buttons designed to facilitate data review (\autoref{fig:main_screen}), wherein the rater can specify (1) if there are multiple sleep windows, (2) if further review will be needed, or (3) if there is insufficient data for sleep analysis. Piloting of ActiSleep in a large sample of youth is forthcoming.
 
-![ActiSleep Tracker (A) main window and (B) the option to add a secondary sleep window.\label{fig:main_screen}](assets/figure2.png)
+![Adding a secondary sleep window.\label{fig:main_screen}](assets/figure2.png)
 
 \autoref{fig:changing_annotation} demonstrates the functionality of the ActiSleep Tracker tool. Panel (A) displays the initial sleep prediction from GGIR (shaded in red), indicating that the participant slept from 5:00 AM to 11:59 AM. Panel (B) shows the adjusted sleep window after applying the ActiSleep Tracker tool, which indicates the correct wake-up time at 2:27 PM. A video demonstrating [how to use ActiSleep Tracker](https://youtu.be/s9r8V9NCC2M) is also available online.
 
