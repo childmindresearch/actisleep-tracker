@@ -40,17 +40,17 @@ authors:
     affiliation: "1, 5, 6"
 
 affiliations:
- - name: Child Mind Institute, New York City, NY
+ - name: Child Mind Institute, New York City, New York, United States of America
    index: 1
- - name: Genetic Epidemiology Research Branch, Intramural Research Program, National Institute of Mental Health, Bethesda, MD
+ - name: Genetic Epidemiology Research Branch, Intramural Research Program, National Institute of Mental Health, Bethesda, Maryland, United States of America
    index: 2
- - name: Department of Biostatistics and Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO
+ - name: Department of Biostatistics and Informatics, University of Colorado Anschutz Medical Campus, Aurora, Colorado, United States of America
    index: 3
- - name: Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD
+ - name: Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, United States of America
    index: 4
- - name: Nathan S. Kline Institute for Psychiatric Research, Orangeburg, NY
+ - name: Nathan S. Kline Institute for Psychiatric Research, Orangeburg, New York, United States of America
    index: 5
- - name: NYU Grossman School of Medicine, New York City, NY
+ - name: NYU Grossman School of Medicine, New York City, New York, United States of America
    index: 6
 date: 24 March 2025
 bibliography: paper.bib
@@ -92,6 +92,6 @@ The application includes three toggle buttons designed to facilitate data review
 
 # Acknowledgements
 
-This research was funded by the National Institute of Mental Health, grant number R01MH124045. Intramural Research Program of the National Institute of Menatl Health through grant ZIA MH002954-02 (Motor Activity Research Consortium for Health - mMarch).
+This research was funded by the National Institute of Mental Health, grant number R01MH124045. Intramural Research Program of the National Institute of Mental Health through grant ZIA MH002954-02 (Motor Activity Research Consortium for Health - mMarch).
 
 # References
