@@ -4,6 +4,7 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
 [![L-GPL License](https://img.shields.io/badge/license-L--GPL-blue.svg)](https://github.com/childmindresearch/app-actigraphy/blob/main/LICENSE)
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.08181/status.svg)](https://doi.org/10.21105/joss.08181)
 
 ActiSleep Tracker is an application designed to run after processing actigraphy data with the [GGIR package](https://wadpac.github.io/GGIR/) and allows users to annotate sleep data. This repository contains the source code and related files for the application.
 
